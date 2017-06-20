@@ -90,12 +90,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="小破厂">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。 前两种是是面向线程开发的多线程技术，需要开发者自己去维护线程的生命周期，比较繁琐。 后两者是面向队列开发的多线程技术，开发者仅仅定义想执行的任务追加到适当的Dispatch Queue(队列)中并设置一些优先级，依赖等操作就可以了，其他的事情可以交给系统来做。  多线程开发时容易发生的一些问题： 多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多线程技术">
+<meta property="og:url" content="http://yoursite.com/2017/06/20/多线程/index.html">
 <meta property="og:site_name" content="小破厂">
+<meta property="og:description" content="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。 前两种是是面向线程开发的多线程技术，需要开发者自己去维护线程的生命周期，比较繁琐。 后两者是面向队列开发的多线程技术，开发者仅仅定义想执行的任务追加到适当的Dispatch Queue(队列)中并设置一些优先级，依赖等操作就可以了，其他的事情可以交给系统来做。  多线程开发时容易发生的一些问题： 多">
+<meta property="og:updated_time" content="2017-06-20T10:29:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小破厂">
+<meta name="twitter:title" content="多线程技术">
+<meta name="twitter:description" content="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。 前两种是是面向线程开发的多线程技术，需要开发者自己去维护线程的生命周期，比较繁琐。 后两者是面向队列开发的多线程技术，开发者仅仅定义想执行的任务追加到适当的Dispatch Queue(队列)中并设置一些优先级，依赖等操作就可以了，其他的事情可以交给系统来做。  多线程开发时容易发生的一些问题： 多">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/20/多线程/"/>
 
 
 
 
 
-  <title>小破厂</title>
+  <title>多线程技术 | 小破厂</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -155,9 +159,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-   page-home 
- ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/20/多线程/" itemprop="url">多线程技术</a></h1>
+          <h1 class="post-title" itemprop="name headline">多线程技术</h1>
         
 
         <div class="post-meta">
@@ -317,9 +317,7 @@
       
 
       
-        
-          
-            <h4 id="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。"><a href="#iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。" class="headerlink" title="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。"></a>iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。</h4><ul>
+        <h4 id="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。"><a href="#iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。" class="headerlink" title="iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。"></a>iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。</h4><ul>
 <li>前两种是是面向线程开发的多线程技术，需要开发者自己去维护线程的生命周期，比较繁琐。</li>
 <li>后两者是面向队列开发的多线程技术，开发者仅仅定义想执行的任务追加到适当的Dispatch Queue(队列)中并设置一些优先级，依赖等操作就可以了，其他的事情可以交给系统来做。</li>
 </ul>
@@ -329,20 +327,27 @@
 <li>使用太多的线程导致消耗内存。</li>
 </ul>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -350,246 +355,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/25/git代码管理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="没有子弹的枪手">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://i0.sinaimg.cn/ty/zl/football/blog/2014-01-13/1024/1739392044/U5295P6T1233D604F36786DT20140113102439.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小破厂">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/25/git代码管理/" itemprop="url">git代码管理</a></h1>
-        
+      
 
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-25T12:00:28+08:00">
-                2017-05-25
-              </time>
+              <a href="/2017/05/25/git代码管理/" rel="next" title="git代码管理">
+                <i class="fa fa-chevron-left"></i> git代码管理
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="什么是git？"><a href="#什么是git？" class="headerlink" title="什么是git？"></a>什么是git？</h1><ul>
-<li>git是一款开源的分布式版本控制工具</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/22/搭建博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="没有子弹的枪手">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://i0.sinaimg.cn/ty/zl/football/blog/2014-01-13/1024/1739392044/U5295P6T1233D604F36786DT20140113102439.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小破厂">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/05/22/搭建博客/" itemprop="url">搭建博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-22T20:58:42+08:00">
-                2016-05-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="创建md文件：hexo-new-“”"><a href="#创建md文件：hexo-new-“”" class="headerlink" title="创建md文件：hexo new “”"></a>创建md文件：hexo new “”</h3><h3 id="运行：hexo-g（本地生成静态文件）"><a href="#运行：hexo-g（本地生成静态文件）" class="headerlink" title="运行：hexo g（本地生成静态文件）"></a>运行：hexo g（本地生成静态文件）</h3><h3 id="运行：hexo-server-（运行程序，访问本地localhost-4000可以看到博客已经搭建成功）"><a href="#运行：hexo-server-（运行程序，访问本地localhost-4000可以看到博客已经搭建成功）" class="headerlink" title="运行：hexo server （运行程序，访问本地localhost:4000可以看到博客已经搭建成功）"></a>运行：hexo server （运行程序，访问本地localhost:4000可以看到博客已经搭建成功）</h3><h3 id="运行：hexo-d（将本地静态文件推送至Github）"><a href="#运行：hexo-d（将本地静态文件推送至Github）" class="headerlink" title="运行：hexo d（将本地静态文件推送至Github）"></a>运行：hexo d（将本地静态文件推送至Github）</h3>
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -597,6 +394,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -616,8 +417,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://i0.sinaimg.cn/ty/zl/football/blog/2014-01-13/1024/1739392044/U5295P6T1233D604F36786DT20140113102439.jpg"
@@ -670,6 +480,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。"><span class="nav-number">1.</span> <span class="nav-text">iOS开发中，有四种多线程技术：pthread、NSThread、GCD、NSOperation。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多线程开发时容易发生的一些问题："><span class="nav-number">2.</span> <span class="nav-text">多线程开发时容易发生的一些问题：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -790,6 +616,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
